@@ -1,7 +1,6 @@
 # boot-proxy
 
-HTTP proxy [ring middleware](https://github.com/ring-clojure/ring/blob/a02518275a06835e4fdd1a3af59d7c4c0408d25b/SPEC#L12)
-for Clojure web applications.
+A Boot HTTP proxy server task.
 
 ### Dependency
 
@@ -17,7 +16,7 @@ was invalid --- there was no easy way to tell Axis2 to pass those arguments to
 the HTTP client it uses to make the requests).
 
 ```
-$ boot proxy -t /forward -p 7000 -u https://example.com -o insecure=true
+$ boot serve-proxy -t /forward -p 7000 -u https://example.com -o insecure=true
 ```
 
 You can now make requests to http://localhost:7000/foo/bar, for instance, and
